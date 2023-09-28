@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block 'metadescription' %} {% endblock %}">
+    <link rel="stylesheet" href="{% static 'css/custome.css' %}">
+    <script src="https://kit.fontawesome.com/8360c257ca.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"  crossorigin="anonymous">
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+<div class="container">
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+{% block content %}
+
+{% endblock %}
+    </div>
+{% include 'footer.html' %}
+<script src=" {% static 'js/popper.min.js' %}"  crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"  crossorigin="anonymous"></script>
+
+
+</body>
+</html>
