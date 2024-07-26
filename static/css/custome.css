@@ -14,20 +14,17 @@ font-family: 'Roboto', sans-serif;
 
  }
 
- .footer{
- background-color:lightblue;
- height:55px;
- }
- .footer p{
- padding-top:20px;
- font-size:14px;
- }
+
+
+
+
+
 
  .my_row_class{
    padding-top:15px;
 
  }
- .my_row_class .mx_auto{
+ .my_row_class .mx-auto{
    color:black;
    font-size:12px;
  }
