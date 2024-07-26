@@ -22,9 +22,9 @@
         <p><a href="{% url 'ecommapp:Allprodcat' %}">Home</a>|<a href="{{product.category.get_url}}" >{{product.category}}</a>|{{product.name}}</p>
     </div>
 </div>
-<div class="container">
+<div class="container" style="margin-bottom:30px;">
 <br>
-<div class="row">
+<div class="row" >
     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
         <div style="min-width:18rem;">
             <img src="{{product.image.url}}" alt="{{product.name}}" width="100%" height="400px" >
@@ -54,6 +54,10 @@
       </div>
 
     </div>
+{% endblock %}
+</div>
+
+
+<div>
 
 </div>
-{% endblock %}
